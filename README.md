@@ -1,2 +1,5 @@
 # WP3
 Data harmonisation in Space-Time-Taxonomy, Data gaps and biases 
+
+All identified biodiversity and environmental data in the data catalogue should be made interoperable in space-time-taxonomy. To facilitate analyses on the data it's essential to map data gaps and data biasesfor the taxonomic groups under 
+analysis. E.g. birds have the best coverage, whereas pollinators are still strongly biased to North-Western Europe. As continued data streams are linked to the infrastructure these gaps and biases should be identified on-the-fly making use of the latest taxonomically standardized data. The data that is requested for analysis by a Virtual Research Environment (VRE) is harmonised, cropped, and delivered as multidimensional array structures organised into relevant and compatible dimensions, including time, geography and taxonomy (i.e. a data cube). This will allow users to perform complex queries, slice-and-dice operations, and drill-down analysis to explore intricate relationships and patterns in the data across these different dimensions.
