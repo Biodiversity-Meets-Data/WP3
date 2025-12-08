@@ -1,6 +1,6 @@
 # Data Directory
 
-This folder contains all datasets used or generated in the project *Biodiversity Meets Data (BMD)*.
+This folder contains all datasets used or generated in the project *Biodiversity Meets Data (BMD) - T3.3*.
 
 Datasets (external - google drive link): 
 https://drive.google.com/drive/folders/1jwoqt9lfkz-M3NuvcmvXwVv3tLMY3MWm?usp=drive_link 

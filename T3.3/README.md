@@ -1,6 +1,7 @@
-# Biodiversity Meets Data (BMD)
+# Task: T3.3 - Data gap and bias surfaces
+## Biodiversity Meets Data (BMD)
 ## Work Package: WP3 - Data harmonisation in Space-Time-Taxonomy, Data gaps and biases
-## Task: T3.3 - Data gap and bias surfaces
+
 
 This repository contains the core scripts and subprojects used to download,
 filter, validate, and analyse GBIF occurrence data for the
