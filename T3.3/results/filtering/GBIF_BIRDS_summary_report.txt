@@ -1,0 +1,740 @@
+GBIF DATA SUMMARY REPORT
+
+Dataset: GBIF_BIRDS_251106.zip
+============================================================
+
+Filter configuration
+--------------------
+Required non-null fields: scientificName, taxonKey, decimalLatitude, decimalLongitude
+basisOfRecord filter: ['HUMAN_OBSERVATION', 'MACHINE_OBSERVATION', 'PRESERVED_SPECIMEN']
+coordinateUncertaintyInMeters filter: < 1000 m (NaN treated as 0)
+Spatial filter (bounding box): none (all lat/lon kept)
+Temporal filter (year): none (all years kept)
+
+Total records (raw): 17021685
+Records after filtering: 17021679
+Unique species: 432
+Unique taxonKeys: 546
+
+Retention ratio after filtering: 100.00%
+
+Year range: 1670 to 2025
+Geographic coverage: 32 unique countries
+Latitude range: 24.6366 to 74.1425
+Longitude range: -35.4700 to 34.5874
+
+Basis of Record distribution:
+  HUMAN_OBSERVATION: 16861658 (99.06%)
+  MACHINE_OBSERVATION: 154304 (0.91%)
+  PRESERVED_SPECIMEN: 5717 (0.03%)
+
+Top 10 species by number of occurrences:
+  Cygnus cygnus (Linnaeus, 1758): 1193917
+  Grus grus (Linnaeus, 1758): 1150629
+  Haliaeetus albicilla (Linnaeus, 1758): 989320
+  Circus aeruginosus (Linnaeus, 1758): 919351
+  Milvus milvus (Linnaeus, 1758): 647599
+  Branta leucopsis (Bechstein, 1803): 587986
+  Sterna hirundo Linnaeus, 1758: 576603
+  Dryocopus martius (Linnaeus, 1758): 504058
+  Tringa glareola Linnaeus, 1758: 486945
+  Calidris pugnax (Linnaeus, 1758): 436588
+
+Occurrences per country (sorted by number of occurrences):
+  SE: 9049196
+  NO: 1935790
+  DK: 1495194
+  FR: 1147290
+  DE: 1042350
+  ES: 607417
+  FI: 372959
+  PT: 255608
+  GB: 241704
+  IT: 191627
+  BE: 91608
+  EE: 87070
+  AT: 80469
+  GR: 76792
+  NL: 62169
+  BG: 58918
+  RO: 44951
+  HU: 29832
+  HR: 28789
+  PL: 28691
+  CH: 19066
+  IS: 17318
+  CY: 16584
+  IE: 9905
+  LU: 6628
+  CZ: 6511
+  SI: 5693
+  LT: 5344
+  LV: 3111
+  SK: 2329
+  MT: 588
+  LI: 178
+
+Occurrences by year (all years):
+  1670: 1
+  1694: 1
+  1742: 1
+  1743: 1
+  1744: 4
+  1745: 7
+  1753: 27
+  1773: 1
+  1774: 1
+  1775: 2
+  1779: 7
+  1780: 1
+  1781: 3
+  1782: 1
+  1787: 1
+  1790: 10
+  1791: 1
+  1792: 5
+  1794: 3
+  1798: 1
+  1800: 13
+  1804: 1
+  1805: 1
+  1810: 1
+  1814: 1
+  1820: 4
+  1822: 1
+  1823: 2
+  1824: 1
+  1825: 1
+  1827: 4
+  1828: 1
+  1830: 3
+  1831: 2
+  1832: 1
+  1833: 6
+  1835: 5
+  1836: 2
+  1837: 2
+  1838: 13
+  1839: 5
+  1840: 9
+  1841: 16
+  1842: 12
+  1843: 11
+  1844: 18
+  1845: 33
+  1846: 7
+  1847: 7
+  1848: 5
+  1849: 19
+  1850: 17
+  1851: 11
+  1852: 3
+  1853: 4
+  1854: 4
+  1855: 10
+  1856: 11
+  1857: 1011
+  1858: 6
+  1859: 8
+  1860: 15
+  1861: 5
+  1862: 14
+  1863: 19
+  1864: 11
+  1865: 2215
+  1866: 19
+  1867: 16
+  1868: 32
+  1869: 19
+  1870: 18
+  1871: 21
+  1872: 27
+  1873: 404
+  1874: 31
+  1875: 33
+  1876: 15
+  1877: 26
+  1878: 16
+  1879: 36
+  1880: 32
+  1881: 33
+  1882: 27
+  1883: 61
+  1884: 66
+  1885: 84
+  1886: 66
+  1887: 93
+  1888: 75
+  1889: 40
+  1890: 67
+  1891: 79
+  1892: 65
+  1893: 99
+  1894: 66
+  1895: 87
+  1896: 90
+  1897: 90
+  1898: 96
+  1899: 75
+  1900: 112
+  1901: 78
+  1902: 105
+  1903: 312
+  1904: 190
+  1905: 100
+  1906: 98
+  1907: 98
+  1908: 89
+  1909: 65
+  1910: 89
+  1911: 68
+  1912: 64
+  1913: 34
+  1914: 45
+  1915: 62
+  1916: 64
+  1917: 47
+  1918: 45
+  1919: 46
+  1920: 82
+  1921: 106
+  1922: 281
+  1923: 88
+  1924: 69
+  1925: 102
+  1926: 57
+  1927: 147
+  1928: 78
+  1929: 59
+  1930: 87
+  1931: 173
+  1932: 140
+  1933: 84
+  1934: 129
+  1935: 220
+  1936: 209
+  1937: 213
+  1938: 198
+  1939: 133
+  1940: 117
+  1941: 100
+  1942: 130
+  1943: 103
+  1944: 205
+  1945: 193
+  1946: 120
+  1947: 140
+  1948: 147
+  1949: 551
+  1950: 159
+  1951: 258
+  1952: 270
+  1953: 286
+  1954: 545
+  1955: 486
+  1956: 391
+  1957: 692
+  1958: 942
+  1959: 1173
+  1960: 2020
+  1961: 2627
+  1962: 2752
+  1963: 3767
+  1964: 4561
+  1965: 4156
+  1966: 5209
+  1967: 4859
+  1968: 6042
+  1969: 8613
+  1970: 8777
+  1971: 9588
+  1972: 10637
+  1973: 12519
+  1974: 15665
+  1975: 17075
+  1976: 17885
+  1977: 17658
+  1978: 16767
+  1979: 17698
+  1980: 21656
+  1981: 22881
+  1982: 25533
+  1983: 29170
+  1984: 31235
+  1985: 33638
+  1986: 33765
+  1987: 35191
+  1988: 36790
+  1989: 38703
+  1990: 40580
+  1991: 41186
+  1992: 46952
+  1993: 53318
+  1994: 56413
+  1995: 64970
+  1996: 64879
+  1997: 68001
+  1998: 71619
+  1999: 77182
+  2000: 95002
+  2001: 115576
+  2002: 140265
+  2003: 175927
+  2004: 215231
+  2005: 266020
+  2006: 310704
+  2007: 342978
+  2008: 389203
+  2009: 441878
+  2010: 486529
+  2011: 578959
+  2012: 606386
+  2013: 636999
+  2014: 678831
+  2015: 697730
+  2016: 764930
+  2017: 851254
+  2018: 884357
+  2019: 923856
+  2020: 1042795
+  2021: 1120530
+  2022: 1088980
+  2023: 1041008
+  2024: 1065042
+  2025: 952708
+
+Data coverage (year range): 1670–2025
+
+All species sorted by number of occurrences:
+  Cygnus cygnus (Linnaeus, 1758): 1193917
+  Grus grus (Linnaeus, 1758): 1150629
+  Haliaeetus albicilla (Linnaeus, 1758): 989320
+  Circus aeruginosus (Linnaeus, 1758): 919351
+  Milvus milvus (Linnaeus, 1758): 647599
+  Branta leucopsis (Bechstein, 1803): 587986
+  Sterna hirundo Linnaeus, 1758: 576603
+  Dryocopus martius (Linnaeus, 1758): 504058
+  Tringa glareola Linnaeus, 1758: 486945
+  Calidris pugnax (Linnaeus, 1758): 436588
+  Pandion haliaetus (Linnaeus, 1758): 410369
+  Lanius collurio Linnaeus, 1758: 405531
+  Gavia arctica (Linnaeus, 1758): 388889
+  Pluvialis apricaria (Linnaeus, 1758): 387235
+  Alcedo atthis (Linnaeus, 1758): 353990
+  Circus cyaneus (Linnaeus, 1766): 337639
+  Falco peregrinus Tunstall, 1771: 306775
+  Podiceps auritus (Linnaeus, 1758): 288333
+  Mergellus albellus (Linnaeus, 1758): 284572
+  Gavia stellata (Pontoppidan, 1763): 279070
+  Ciconia ciconia (Linnaeus, 1758): 252646
+  Egretta garzetta (Linnaeus, 1766): 236157
+  Lullula arborea (Linnaeus, 1758): 228057
+  Sterna paradisaea Pontoppidan, 1763: 223424
+  Limosa lapponica (Linnaeus, 1758): 217945
+  Recurvirostra avosetta Linnaeus, 1758: 209399
+  Pernis apivorus (Linnaeus, 1758): 204624
+  Milvus migrans (Boddaert, 1783): 203776
+  Hydrocoloeus minutus (Pallas, 1776): 190524
+  Thalasseus sandvicensis (Latham, 1787): 182298
+  Crex crex (Linnaeus, 1758): 181444
+  Falco columbarius Linnaeus, 1758: 177878
+  Hydroprogne caspia (Pallas, 1770): 161121
+  Botaurus stellaris (Linnaeus, 1758): 154724
+  Luscinia svecica (Linnaeus, 1758): 144531
+  Picus canus J.F.Gmelin, 1788: 136770
+  Aquila chrysaetos (Linnaeus, 1758): 117677
+  Caprimulgus europaeus Linnaeus, 1758: 107381
+  Tetrao urogallus Linnaeus, 1758: 99823
+  Chlidonias niger (Linnaeus, 1758): 96991
+  Himantopus himantopus (Linnaeus, 1758): 89427
+  Aegolius funereus (Linnaeus, 1758): 87239
+  Glaucidium passerinum (Linnaeus, 1758): 85676
+  Picoides tridactylus (Linnaeus, 1758): 83799
+  Asio flammeus (Pontoppidan, 1763): 79708
+  Gyps fulvus (Hablizl, 1783): 76858
+  Platalea leucorodia Linnaeus, 1758: 74412
+  Circus pygargus (Linnaeus, 1758): 69039
+  Columba palumbus azorica Hartert, 1905: 63300
+  Circaetus gallicus (Gmelin, 1788): 62513
+  Surnia ulula (Linnaeus, 1758): 58913
+  Tetrastes bonasia (Linnaeus, 1758): 57727
+  Ficedula parva (Bechstein, 1792): 55506
+  Gavia immer (Brunnich, 1764): 51884
+  Ichthyaetus melanocephalus (Temminck, 1820): 51604
+  Tadorna ferruginea (Pallas, 1764): 50116
+  Emberiza hortulana Linnaeus, 1758: 49140
+  Porzana porzana (Linnaeus, 1766): 45541
+  Phalaropus lobatus (Linnaeus, 1758): 45435
+  Coracias garrulus Linnaeus, 1758: 42734
+  Plegadis falcinellus (Linnaeus, 1766): 39090
+  Ficedula albicollis (Temminck, 1815): 33770
+  Ardea purpurea Linnaeus, 1766: 33733
+  Ciconia nigra (Linnaeus, 1758): 33307
+  Burhinus oedicnemus (Linnaeus, 1758): 32549
+  Nycticorax nycticorax (Linnaeus, 1758): 31290
+  Charadrius alexandrinus Linnaeus, 1758: 30524
+  Hieraaetus pennatus (Gmelin, 1788): 30499
+  Circus macrourus (S.G.Gmelin, 1770): 30343
+  Anthus campestris (Linnaeus, 1758): 30272
+  Anser erythropus (Linnaeus, 1758): 29437
+  Falco vespertinus Linnaeus, 1766: 28761
+  Bubo bubo (Linnaeus, 1758): 26602
+  Chlidonias hybrida (Pallas, 1811): 24417
+  Porphyrio porphyrio (Linnaeus, 1758): 24178
+  Charadrius morinellus Linnaeus, 1758: 24093
+  Leiopicus medius (Linnaeus, 1758): 22845
+  Pyrrhocorax pyrrhocorax (Linnaeus, 1758): 22662
+  Hydrobates pelagicus (Linnaeus, 1758): 21858
+  Ardeola ralloides (Scopoli, 1769): 21396
+  Sylvia undata (Boddaert, 1783): 20384
+  Sylvia nisoria (Bechstein, 1792): 20040
+  Anarhynchus alexandrinus: 19885
+  Gallinago media (Latham, 1787): 19249
+  Aythya nyroca (Güldenstädt, 1770): 17075
+  Strix uralensis Pallas, 1771: 16437
+  Chroicocephalus genei (Brème, 1839): 16356
+  Branta ruficollis (Pallas, 1769): 16356
+  Luscinia svecica cyanecula (Meisner, 1804): 15849
+  Tetrax tetrax (Linnaeus, 1758): 15446
+  Calandrella brachydactyla (Leisler, 1814): 15437
+  Dendrocopos leucotos (Bechstein, 1802): 14921
+  Strix nebulosa J.R.Forster, 1772: 14705
+  Falco naumanni J.G.Fleischer, 1818: 13719
+  Polysticta stelleri (Pallas, 1769): 13592
+  Dendrocopos medius (Linnaeus, 1758): 13499
+  Falco rusticolus Linnaeus, 1758: 12829
+  Aquila fasciata Vieillot, 1822: 12808
+  Melanocorypha calandra (Linnaeus, 1766): 12476
+  Ichthyaetus audouinii (Payraudeau, 1826): 12194
+  Neophron percnopterus (Linnaeus, 1758): 12026
+  Calonectris diomedea borealis (Cory, 1881): 11922
+  Galerida theklae A.E.Brehm, 1857: 10892
+  Dendrocoptes medius (Linnaeus, 1758): 10171
+  Larus melanocephalus Temminck, 1820: 9688
+  Lanius minor Gmelin, 1788: 9478
+  Elanus caeruleus (Desfontaines, 1789): 9139
+  Otis tarda Linnaeus, 1758: 8620
+  Aegypius monachus (Linnaeus, 1766): 8529
+  Calonectris borealis (Cory, 1881): 8374
+  Acrocephalus melanopogon (Temminck, 1823): 8124
+  Curruca undata (Boddaert, 1783): 7563
+  Glareola pratincola (Linnaeus, 1766): 7434
+  Philomachus pugnax (Linnaeus, 1758): 6952
+  Cyanecula svecica (Linnaeus, 1758): 6922
+  Calonectris diomedea (Scopoli, 1769): 6650
+  Puffinus yelkouan (Acerbi, 1827): 6392
+  Ixobrychus minutus (Linnaeus, 1766): 6280
+  Eudromias morinellus (Linnaeus, 1758): 6115
+  Tetrao tetrix Linnaeus, 1758: 5868
+  Pterocles alchata (Linnaeus, 1766): 5867
+  Pelecanus crispus Bruch, 1832: 5598
+  Curruca nisoria (Bechstein, 1792): 5520
+  Oenanthe leucura (Gmelin, 1789): 5334
+  Calonectris borealis (Forster, 1772): 5260
+  Ciconia ciconia ciconia (Linnaeus, 1758): 5254
+  Buteo rufinus (Cretzschmar, 1829): 5196
+  Aquila pomarina C.L.Brehm, 1831: 5003
+  Pyrrhula murina Godman, 1866: 4967
+  Oxyura leucocephala (Scopoli, 1769): 4861
+  Cygnus columbianus bewickii Yarrell, 1830: 4837
+  Dendrocopos syriacus (Hemprich & Ehrenberg, 1833): 4824
+  Larus audouinii Payraudeau, 1826: 4782
+  Gypaetus barbatus (Linnaeus, 1758): 4679
+  Falco eleonorae Géné, 1839: 4654
+  Oceanodroma leucorhoa (Vieillot, 1818): 4290
+  Puffinus mauretanicus Lowe, 1921: 4208
+  Xenus cinereus (Güldenstädt, 1775): 4033
+  Marmaronetta angustirostris (Ménétries, 1832): 4006
+  Pelecanus onocrotalus Linnaeus, 1758: 4000
+  Porzana parva (Scopoli, 1769): 3800
+  Emberiza caesia Cretzschmar, 1827: 3712
+  Aquila adalberti C.L.Brehm, 1861: 3711
+  Thalasseus sandvicensis sandvicensis (Latham, 1787): 3649
+  Aquila clanga Pallas, 1811: 3639
+  Cyanecula svecica cyanecula (Meisner, 1804): 3631
+  Lanius nubicus Lichtenstein, 1823: 3448
+  Phalacrocorax aristotelis desmarestii (Payraudeau, 1826): 3288
+  Clanga pomarina (C.L.Brehm, 1831): 3287
+  Chersophilus duponti (Vieillot, 1824): 3270
+  Calidris alpina schinzii (C.L.Brehm & Schilling, 1822): 3212
+  Oenanthe pleschanka (Lepechin, 1770): 3181
+  Alectoris graeca (Meisner, 1804): 3100
+  Bucanetes githagineus (M.H.K.Lichtenstein, 1823): 3043
+  Sterna hirundo hirundo Linnaeus, 1758: 3043
+  Sterna sandvicensis Latham, 1787: 2885
+  Aquila heliaca Savigny, 1809: 2814
+  Fulica cristata Gmelin, 1789: 2775
+  Luscinia svecica svecica (Linnaeus, 1758): 2670
+  Vanellus spinosus (Linnaeus, 1758): 2601
+  Pterocles orientalis (Linnaeus, 1758): 2512
+  Zapornia parva (Scopoli, 1769): 2472
+  Bonasa bonasia (Linnaeus, 1758): 2453
+  Clanga clanga (Pallas, 1811): 2327
+  Oenanthe cypriaca (Homeyer, 1884): 2234
+  Anser albifrons flavirostris Dalgety & P.Scott, 1948: 2181
+  Bubo scandiacus (Linnaeus, 1758): 2148
+  Larus genei Brème, 1839: 1845
+  Bulweria bulwerii (Jardine & Selby, 1828): 1788
+  Saxicola dacotiae (Meade-Waldo, 1889): 1656
+  Neophron percnopterus majorensis Donazar, Negro, Palacios, Gangoso, Godoy, Ceballos, Hiraldo & Capote, 2002: 1621
+  Gulosus aristotelis desmarestii (Payraudeau, 1826): 1543
+  Hydrobates leucorhous (Vieillot, 1818): 1533
+  Alectoris barbara (Bonnaterre, 1790): 1328
+  Lagopus muta helvetica (Thienemann, 1829): 1261
+  Mergus albellus Linnaeus, 1758: 1225
+  Columba bollii Godman, 1872: 1165
+  Sitta whiteheadi Sharpe, 1884: 1158
+  Columba junoniae Hartert, 1916: 1112
+  Acrocephalus paludicola (Vieillot, 1817): 1110
+  Columba trocaz Heineken, 1829: 1067
+  Perdix perdix hispaniensis Reichenow, 1892: 1067
+  Milvus milvus milvus (Linnaeus, 1758): 1061
+  Emberiza cineracea C.L.Brehm, 1855: 999
+  Dendrocopos major canariensis (A.F.Koenig, 1889): 945
+  Cursorius cursor (Latham, 1787): 936
+  Sterna dougallii Montagu, 1813: 843
+  Alectoris barbara koenigi (Reichenow, 1899): 808
+  Larus minutus Pallas, 1776: 793
+  Curruca ruppeli (Temminck, 1823): 752
+  Porzana pusilla (Pallas, 1776): 749
+  Periparus ater cypriotes (Dresser, 1888): 700
+  Zapornia pusilla (Pallas, 1776): 676
+  Falco peregrinus pelegrinoides Temminck, 1829: 661
+  Curruca melanothorax (Tristram, 1872): 640
+  Falco cherrug J.E.Gray, 1834: 639
+  Ardea alba alba Linnaeus, 1758: 593
+  Burhinus oedicnemus insularum (Sassi, 1908): 581
+  Sitta krueperi Pelzeln, 1863: 572
+  Bucanetes githagineus amantum (Hartert, 1903): 571
+  Gyps fulvus fulvus (Hablizl, 1783): 563
+  Phalacrocorax pygmeus (Pallas, 1773): 494
+  Egretta garzetta garzetta (Linnaeus, 1766): 488
+  Apus caffer (M.H.K.Lichtenstein, 1823): 459
+  Sterna albifrons Pallas, 1764: 430
+  Sterna dougallii dougallii Montagu, 1813: 412
+  Pyrrhocorax pyrrhocorax barbarus Vaurie, 1954: 389
+  Hippolais olivetorum (Strickland, 1837): 388
+  Dendrocopos major thanneri le Roi, 1911: 366
+  Curruca sarda (Temminck, 1820): 348
+  Phoenicopterus ruber Linnaeus, 1758: 343
+  Loxia scotica Hartert, 1904: 335
+  Oceanodroma castro (Harcourt, 1851): 332
+  Certhia brachydactyla dorotheae Hartert, 1904: 324
+  Saxicola dacotiae dacotiae (Meade-Waldo, 1889): 319
+  Milvus migrans migrans (Boddaert, 1783): 318
+  Ficedula semitorquata (Homeyer, 1885): 289
+  Circus aeruginosus aeruginosus (Linnaeus, 1758): 283
+  Circus hudsonius (Linnaeus, 1766): 263
+  Luscinia svecica namnetum Mayaud, 1934: 241
+  Hieraaetus fasciatus (Vieillot, 1822): 198
+  Sterna caspia Pallas, 1770: 189
+  Platalea leucorodia leucorodia Linnaeus, 1758: 172
+  Pandion haliaetus haliaetus (Linnaeus, 1758): 171
+  Falco peregrinus peregrinus Tunstall, 1771: 166
+  Alcedo atthis ispida Linnaeus, 1758: 164
+  Pelagodroma marina (Latham, 1790): 162
+  Accipiter nisus granti Sharpe, 1890: 162
+  Uria aalge albionis Witherby, 1923: 160
+  Cygnus bewickii Yarrell, 1830: 158
+  Pterodroma madeira Mathews, 1934: 157
+  Aquila pennata (J.F.Gmelin, 1788): 153
+  Falco peregrinus brookei Sharpe, 1873: 148
+  Bonasia bonasia (Linnaeus, 1758): 142
+  Microcarbo pygmeus (Pallas, 1773): 129
+  Nycticorax nycticorax nycticorax (Linnaeus, 1758): 126
+  Emberiza cineracea semenowi Zarudny, 1904: 120
+  Sylvia melanothorax Tristram, 1872: 111
+  Cursorius cursor cursor (Latham, 1787): 106
+  Sylvia sarda Temminck, 1820: 103
+  Falco biarmicus Temminck, 1825: 102
+  Aquila chrysaetos chrysaetos (Linnaeus, 1758): 102
+  Pyrrhocorax pyrrhocorax erythroramphos (Vieillot, 1817): 98
+  Troglodytes troglodytes fridariensis Williamson, 1951: 93
+  Pyrrhocorax pyrrhocorax pyrrhocorax (Linnaeus, 1758): 90
+  Pterocles orientalis orientalis (Linnaeus, 1758): 90
+  Chlidonias niger niger (Linnaeus, 1758): 89
+  Luscinia svecica cyanecula (Wolf, 1810): 83
+  Chlidonias hybrida hybrida (Pallas, 1811): 80
+  Fringilla teydea Webb, Berthelot & Moquin-Tandon, 1836: 73
+  Sternula albifrons albifrons (Pallas, 1764): 73
+  Accipiter brevipes (Severtzov, 1850): 71
+  Hydrobates castro (Harcourt, 1851): 70
+  Buteo rufinus cirtensis (J.Levaillant, 1850): 67
+  Circus cyaneus cyaneus (Linnaeus, 1766): 65
+  Ardea purpurea purpurea Linnaeus, 1766: 65
+  Coracias garrulus garrulus Linnaeus, 1758: 63
+  Falco columbarius aesalon Tunstall, 1771: 63
+  Dendrocopos leucotos lilfordi (Sharpe & Dresser, 1871): 60
+  Alauda arborea Linnaeus, 1758: 57
+  Burhinus oedicnemus oedicnemus (Linnaeus, 1758): 56
+  Picoides tridactylus alpinus C.L.Brehm, 1831: 54
+  Falco peregrinus calidus Latham, 1790: 53
+  Chlamydotis undulata fuertaventurae (Rothschild & Hartert, 1894): 53
+  Chersophilus duponti duponti (Vieillot, 1824): 53
+  Tetrao urogallus aquitanicus C.Ingram, 1915: 53
+  Falco columbarius subaesalon C.L.Brehm, 1827: 51
+  Pterodroma feae (Salvadori, 1900): 48
+  Dendrocoptes medius medius (Linnaeus, 1758): 48
+  Gelochelidon nilotica nilotica (J.F.Gmelin, 1789): 47
+  Circaetus gallicus gallicus: 45
+  Sylvia ruppeli Temminck, 1823: 44
+  Dendrocopos leucotos leucotos (Bechstein, 1802): 44
+  Haliaeetus albicilla albicilla (Linnaeus, 1758): 44
+  Hydrobates leucorhous leucorhous: 39
+  Puffinus yelkouan mauretanicus Lowe, 1921: 39
+  Gavia arctica arctica (Linnaeus, 1758): 38
+  Aquila chrysaetos homeyeri Severtzov, 1888: 37
+  Curruca undata dartfordiensis (Latham, 1787): 36
+  Tetrao urogallus urogallus Linnaeus, 1758: 35
+  Asio flammeus flammeus (Pontoppidan, 1763): 34
+  Podiceps auritus auritus (Linnaeus, 1758): 33
+  Otis tarda tarda Linnaeus, 1758: 33
+  Strix nebulosa lapponica Thunberg, 1798: 33
+  Elanus caeruleus caeruleus (Desfontaines, 1789): 32
+  Burhinus oedicnemus distinctus (Bannerman, 1914): 31
+  Chlidonias niger surinamensis (J.F.Gmelin, 1789): 31
+  Sylvia undata undata (Boddaert, 1783): 30
+  Grus grus grus (Linnaeus, 1758): 30
+  Dryocopus martius martius (Linnaeus, 1758): 29
+  Melanocorypha calandra calandra (Linnaeus, 1766): 28
+  Fringilla coelebs ombriosa Hartert, 1913: 27
+  Porphyrio poliocephalus (Latham, 1801): 26
+  Pluvialis apricaria apricaria (Linnaeus, 1758): 26
+  Caprimulgus europaeus europaeus Linnaeus, 1758: 24
+  Surnia ulula ulula (Linnaeus, 1758): 24
+  Glareola pratincola pratincola (Linnaeus, 1766): 24
+  Curruca undata undata: 23
+  Aquila fasciata fasciata Vieillot, 1822: 23
+  Calandrella brachydactyla brachydactyla (Leisler, 1814): 22
+  Neophron percnopterus percnopterus (Linnaeus, 1758): 22
+  Sterna nilotica J.F.Gmelin, 1789: 22
+  Chlamydotis undulata (Jacquin, 1784): 21
+  Curruca nisoria nisoria: 21
+  Gypaetus barbatus barbatus (Linnaeus, 1758): 21
+  Lanius collurio collurio Linnaeus, 1758: 19
+  Galerida theklae theklae A.E.Brehm, 1857: 19
+  Botaurus stellaris stellaris (Linnaeus, 1758): 19
+  Nyctea scandiaca (Linnaeus, 1758): 18
+  Dendrocopos medius medius (Linnaeus, 1758): 18
+  Buteo rufinus rufinus (Cretzschmar, 1829): 18
+  Bubo bubo hispanus Rothschild & Hartert, 1910: 18
+  Limosa lapponica lapponica (Linnaeus, 1758): 18
+  Picoides tridactylus tridactylus (Linnaeus, 1758): 17
+  Lullula arborea pallida Zarudny, 1902: 17
+  Oenanthe leucura leucura (Gmelin, 1789): 16
+  Lullula arborea arborea (Linnaeus, 1758): 15
+  Charadrius alexandrinus alexandrinus Linnaeus, 1758: 15
+  Alauda campestris Linnaeus, 1758: 14
+  Caprimulgus europaeus meridionalis Hartert, 1896: 13
+  Burhinus oedicnemus saharae (Reichenow, 1894): 13
+  Picus canus canus J.F.Gmelin, 1788: 13
+  Luscinia svecica azuricollis (Rafinesque, 1814): 13
+  Bubo bubo bubo (Linnaeus, 1758): 12
+  Calonectris diomedea diomedea (Scopoli, 1769): 12
+  Milvus migrans parasitus Grant & Mackworth-Praed, 1933: 12
+  Falco gallicus Gmelin, 1788: 11
+  Lagopus mutus pyrenaicus Hartert, 1921: 10
+  Lyrurus tetrix tetrix (Linnaeus, 1758): 10
+  Tetrastes bonasia bonasia (Linnaeus, 1758): 10
+  Aegolius funereus funereus (Linnaeus, 1758): 10
+  Alcedo atthis atthis (Linnaeus, 1758): 10
+  Emberiza cineracea cineracea C.L.Brehm, 1855: 10
+  Anthus campestris campestris (Linnaeus, 1758): 9
+  Dendropicos medius (Linnaeus, 1758): 9
+  Motacilla svecica Linnaeus, 1758: 9
+  Puffinus assimilis Gould, 1838: 9
+  Dendrocopos syriacus syriacus (Hemprich & Ehrenberg, 1833): 9
+  Lagopus muta pyrenaica E.Hartert, 1921: 8
+  Sterna hirundo longipennis Nordmann, 1835: 8
+  Acrocephalus melanopogon melanopogon (Temminck, 1823): 8
+  Ixobrychus minutus minutus (Linnaeus, 1766): 7
+  Sterna albifrons albifrons Pallas, 1764: 7
+  Fringilla teydea teydea Webb, Berthelot & Moquin-Tandon, 1836: 7
+  Strix uralensis liturata Lindroth, 1788: 7
+  Haliaetus albicilla (L.): 7
+  Milvus migrans lineatus (J.E.Gray, 1831): 6
+  Neophron percnopterus ginginianus (Latham, 1790): 6
+  Glaucidium passerinum passerinum (Linnaeus, 1758): 6
+  Pluvialis apricaria altifrons (C.L.Brehm, 1831): 6
+  Ardea garzetta Linnaeus, 1766: 6
+  Falco migrans Boddaert, 1783: 6
+  Ixobrychus minutus dubius Mathews, 1912: 5
+  Tetrao tetrix tetrix: 5
+  Alectoris graeca saxatilis (Bechstein, 1805): 5
+  Accipiter gentilis arrigonii (O.Kleinschmidt, 1903): 5
+  Strix uralensis macroura Wolf, 1810: 5
+  Pterocles alchata alchata (Linnaeus, 1766): 5
+  Sylvia nisoria nisoria (Bechstein, 1792): 4
+  Himantopus himantopus himantopus (Linnaeus, 1758): 4
+  Falco aeruginosus Linnaeus, 1758: 4
+  Falco apivorus Linnaeus, 1758: 4
+  Falco rusticolus candicans Gmelin, 1788: 4
+  Porzana pusilla intermedia (Hermann, 1804): 4
+  Tetrao bonasia Linnaeus, 1758: 4
+  Pyrrhocorax pyrrhocorax docilis (S.G.Gmelin, 1774): 4
+  Tetrastes bonasia griseonota Salomonsen, 1947: 4
+  Asio accipitrinus (Pallas): 3
+  Lobipes lobatus (Linnaeus, 1758): 3
+  Parus ater cypriotes Dresser, 1888: 3
+  Falco biarmicus feldeggii Schlegel, 1843: 3
+  Gavia immer immer: 3
+  Erithacus svecicus (Linnaeus, 1758): 3
+  Falco cherrug cherrug J.E.Gray, 1834: 3
+  Zapornia pusilla intermedia (Hermann, 1804): 3
+  Milvus milvus fasciicauda Hartert, 1914: 3
+  Alectoris graeca whitakeri Schiebel, 1934: 3
+  Aquila heliaca adalberti C.L.Brehm, 1861: 3
+  Falco pelegrinoides Temminck, 1829: 2
+  Alcedo atthis corsicana Laubmann, 1920: 2
+  Cerchneis naumanni (Fleischer, 1818): 2
+  Ficedula parva parva: 2
+  Sylvia undata dartfordiensis Latham, 1787: 2
+  Strix flammea Pontoppidan, 1763: 2
+  Charadrius oedicnemus Linnaeus, 1758: 2
+  Ardea nycticorax Linnaeus, 1758: 2
+  Bonasa bonasia bonasia (Linnaeus, 1758): 2
+  Falco rusticolus rusticolus Linnaeus, 1758: 2
+  Puffinus puffinus mauretanicus Lowe, 1921: 2
+  Fringilla teydea polatzeki Hartert, 1905: 2
+  Falco rusticolus islandus Brünnich, 1764: 2
+  Porzana parva parva: 2
+  Milvus korschun (Gmelin, 1771): 2
+  Picus martius Linnaeus, 1758: 2
+  Bucanetes githagineus zedlitzi (Neumann, 1907): 2
+  Tetrastes bonasia schiebeli (Kleinschmidt, 1943): 2
+  Limosa lapponica baueri J.F.Naumann, 1836: 2
+  Tetrastes bonasia volgensis (Buturlin, 1907): 2
+  Curruca undata toni (Hartert & Ejo, 1909): 2
+  Chlamydotis undulata undulata (Jacquin, 1784): 2
+  Porphyrio porphyrio porphyrio (Linnaeus, 1758): 2
+  Bonasa bonasia volgensis Buturlin, 1916: 2
+  Falco peregrinus tundrius C.M.White, 1968: 2
+  Astur gentilis arrigonii Kleinschmidt, 1903: 1
+  Picoides medius (Linnaeus, 1758): 1
+  Ardea ciconia Linnaeus, 1758: 1
+  Sylvia rueppelli Temminck, 1823: 1
+  Oceanodroma castro castro (Harcourt, 1851): 1
+  Rhodopechys githaginea (M.H.K.Lichtenstein, 1823): 1
+  Gracula atthis Linnaeus, 1758: 1
+  Olor cygnus (Linnaeus, 1758): 1
+  Strix lapponica Thunberg, 1798: 1
+  Circus ater Vieillot, 1816: 1
+  Picus medius Linnaeus, 1758: 1
+  Falco cyaneus Linnaeus, 1766: 1
+  Tetrao urogallus crassirostris C.L.Brehm, 1831: 1
+  Galerida theklae ruficolor Whitaker, 1898: 1
+  Tetrastes bonasia rupestris (C.L.Brehm, 1831): 1
+  Tetrastes bonasia styriacus (von Jordans & Schiebel, 1944): 1
+  Asio flammeus galapagoensis (Gould, 1837): 1
+  Bubo bubo omissus Dementiev, 1933: 1
+  Porphyrio porphyrio samoensis Peale, 1848: 1
+  Nycticorax nycticorax hoactli (Gmelin, 1789): 1
+  Erithacus svecicus cyaneculus (Meisner, 1804): 1
+  Picoides tridactylus tianschanicus Buturlin, 1907: 1
+  Glareola pratincola fuelleborni Neumann, 1910: 1
+  Porphyrio madagascariensis (Latham, 1801): 1
+  Alectoris barbara barbara (Bonnaterre, 1790): 1
+  Alectoris graeca orlandoi Priolo, 1984: 1
+  Bucanetes githagineus crassirostris (Blyth, 1847): 1
+  Loxia curvirostra scotica Hartert: 1
+  Oceanodroma leucorhoa leucorhoa (Vieillot, 1818): 1

@@ -1,0 +1,20 @@
+2025-12-07 20:01:02,749 - === Dataset validation started ===
+2025-12-07 20:01:02,750 - Dataset shape: (14842604, 10)
+2025-12-07 20:01:02,750 - Scientific name column: scientificName
+2025-12-07 20:01:02,750 - Species key column:     taxonKey
+2025-12-07 20:01:02,750 - Longitude column:       decimalLongitude
+2025-12-07 20:01:02,750 - Latitude column:        decimalLatitude
+2025-12-07 20:01:02,774 - 
+[Missing values]
+2025-12-07 20:01:02,774 - Missing decimalLongitude: 0
+2025-12-07 20:01:02,775 - Missing decimalLatitude:  0
+2025-12-07 20:01:02,799 - 
+[Coordinate range validation]
+2025-12-07 20:01:02,799 - Latitude in [-90, 90]:    True
+2025-12-07 20:01:02,799 - Longitude in [-180, 180]: True
+2025-12-07 20:01:02,799 - 
+[Summary]
+2025-12-07 20:01:02,799 - No missing coordinate values.
+2025-12-07 20:01:02,799 - Coordinate ranges are valid.
+2025-12-07 20:01:02,799 - Dataset is structurally ready: GeoDataFrame conversion and spatial join.
+2025-12-07 20:01:02,799 - === Dataset validation completed ===

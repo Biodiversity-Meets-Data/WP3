@@ -1,0 +1,25 @@
+# macOS junk
+.DS_Store
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environments & local secrets
+.venv/
+env/
+venv/
+.env
+
+# VS Code settings
+.vscode/
+
+# Data folders (only structure tracked, όχι τα πραγματικά αρχεία)
+data/**
+!data/README.md
+
+
+
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

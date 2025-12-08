@@ -1,0 +1,351 @@
+GBIF DATA SUMMARY REPORT
+
+Dataset: GBIF_IAS_251106.zip
+============================================================
+
+Filter configuration
+--------------------
+Required non-null fields: scientificName, taxonKey, decimalLatitude, decimalLongitude
+basisOfRecord filter: ['HUMAN_OBSERVATION', 'MACHINE_OBSERVATION', 'PRESERVED_SPECIMEN']
+coordinateUncertaintyInMeters filter: < 1000 m (NaN treated as 0)
+Spatial filter (bounding box): none (all lat/lon kept)
+Temporal filter (year): none (all years kept)
+
+Total records (raw): 2777114
+Records after filtering: 2777113
+Unique species: 129
+Unique taxonKeys: 129
+
+Retention ratio after filtering: 100.00%
+
+Year range: 1650 to 2025
+Geographic coverage: 32 unique countries
+Latitude range: 27.7384 to 71.0833
+Longitude range: -31.2620 to 34.5361
+
+Basis of Record distribution:
+  HUMAN_OBSERVATION: 2731037 (98.34%)
+  MACHINE_OBSERVATION: 43555 (1.57%)
+  PRESERVED_SPECIMEN: 2521 (0.09%)
+
+Top 10 species by number of occurrences:
+  Ondatra zibethicus (Linnaeus, 1766): 672991
+  Alopochen aegyptiaca (Linnaeus, 1766): 470228
+  Impatiens glandulifera Royle: 390241
+  Sciurus carolinensis Gmelin, 1788: 293948
+  Heracleum mantegazzianum Sommier & Levier: 132939
+  Lepomis gibbosus (Linnaeus, 1758): 123580
+  Pacifastacus leniusculus (Dana, 1852): 84286
+  Pseudorasbora parva (Temminck & Schlegel, 1846): 72615
+  Ailanthus altissima (Mill.) Swingle: 71004
+  Myocastor coypus (Molina, 1782): 54708
+
+Occurrences per country (sorted by number of occurrences):
+  NL: 633769
+  BE: 609451
+  GB: 490558
+  FR: 371492
+  DE: 211244
+  CH: 180999
+  SE: 88327
+  NO: 32281
+  IT: 30917
+  ES: 25555
+  DK: 21673
+  AT: 17917
+  FI: 16687
+  PT: 12022
+  IE: 11315
+  CZ: 6606
+  LU: 3128
+  RO: 2809
+  PL: 2761
+  HU: 1685
+  GR: 932
+  HR: 929
+  SK: 857
+  SI: 660
+  EE: 561
+  BG: 550
+  CY: 527
+  LT: 509
+  LV: 211
+  MT: 120
+  LI: 47
+  IS: 14
+
+Occurrences by year (all years):
+  1650: 1
+  1736: 3
+  1800: 6
+  1854: 1
+  1855: 1
+  1862: 3
+  1866: 1
+  1871: 1
+  1886: 1
+  1890: 2
+  1893: 1
+  1894: 1
+  1896: 2
+  1897: 2
+  1898: 1
+  1899: 1
+  1900: 219
+  1901: 2
+  1902: 1
+  1903: 3
+  1904: 4
+  1905: 88
+  1906: 3
+  1907: 2
+  1908: 3
+  1909: 3
+  1910: 2
+  1912: 9
+  1913: 3
+  1914: 1
+  1915: 2
+  1916: 1
+  1917: 6
+  1918: 2
+  1919: 2
+  1920: 3
+  1921: 4
+  1922: 1
+  1923: 2
+  1924: 1
+  1925: 7
+  1926: 6
+  1927: 8
+  1928: 7
+  1929: 7
+  1930: 18
+  1931: 10
+  1932: 15
+  1933: 11
+  1934: 13
+  1935: 23
+  1936: 31
+  1937: 44
+  1938: 22
+  1939: 22
+  1940: 13
+  1941: 30
+  1942: 24
+  1943: 22
+  1944: 16
+  1945: 31
+  1946: 24
+  1947: 15
+  1948: 10
+  1949: 20
+  1950: 43
+  1951: 23
+  1952: 26
+  1953: 29
+  1954: 57
+  1955: 31
+  1956: 50
+  1957: 35
+  1958: 56
+  1959: 82
+  1960: 80
+  1961: 77
+  1962: 48
+  1963: 80
+  1964: 93
+  1965: 272
+  1966: 526
+  1967: 284
+  1968: 223
+  1969: 368
+  1970: 352
+  1971: 436
+  1972: 350
+  1973: 217
+  1974: 297
+  1975: 308
+  1976: 357
+  1977: 646
+  1978: 608
+  1979: 612
+  1980: 779
+  1981: 897
+  1982: 880
+  1983: 874
+  1984: 1301
+  1985: 1476
+  1986: 2020
+  1987: 1747
+  1988: 2198
+  1989: 2040
+  1990: 3082
+  1991: 3072
+  1992: 3496
+  1993: 4135
+  1994: 5872
+  1995: 10763
+  1996: 10375
+  1997: 9169
+  1998: 10355
+  1999: 11728
+  2000: 10946
+  2001: 15123
+  2002: 15073
+  2003: 19887
+  2004: 26977
+  2005: 28474
+  2006: 29447
+  2007: 37353
+  2008: 38099
+  2009: 41306
+  2010: 57547
+  2011: 63128
+  2012: 75754
+  2013: 70539
+  2014: 145430
+  2015: 168382
+  2016: 161038
+  2017: 154102
+  2018: 154565
+  2019: 167334
+  2020: 202657
+  2021: 215923
+  2022: 223793
+  2023: 196563
+  2024: 240892
+  2025: 117414
+
+Data coverage (year range): 1650–2025
+
+All species sorted by number of occurrences:
+  Ondatra zibethicus (Linnaeus, 1766): 672991
+  Alopochen aegyptiaca (Linnaeus, 1766): 470228
+  Impatiens glandulifera Royle: 390241
+  Sciurus carolinensis Gmelin, 1788: 293948
+  Heracleum mantegazzianum Sommier & Levier: 132939
+  Lepomis gibbosus (Linnaeus, 1758): 123580
+  Pacifastacus leniusculus (Dana, 1852): 84286
+  Pseudorasbora parva (Temminck & Schlegel, 1846): 72615
+  Ailanthus altissima (Mill.) Swingle: 71004
+  Myocastor coypus (Molina, 1782): 54708
+  Orconectes limosus (Rafinesque, 1817): 37906
+  Vespa velutina nigrithorax Buysson, 1905: 32078
+  Muntiacus reevesi (Ogilby, 1839): 29560
+  Eriocheir sinensis H.Milne Edwards, 1853: 29527
+  Elodea nuttallii (Planch.) H.St.John: 29308
+  Ameiurus melas (Rafinesque, 1820): 24350
+  Lithobates catesbeianus (Shaw, 1802): 22180
+  Procambarus clarkii (Girard, 1852): 21339
+  Procyon lotor (Linnaeus, 1758): 18273
+  Trachemys scripta (Thunberg In Schoepff, 1792): 16974
+  Oxyura jamaicensis (J.F.Gmelin, 1789): 15095
+  Threskiornis aethiopicus (Latham, 1790): 14425
+  Lysichiton americanus Hultén & H.St.John: 12499
+  Gunnera tinctoria (Molina) Mirb.: 11549
+  Ludwigia grandiflora (Michx.) Greuter & Burdet: 10498
+  Trachemys scripta elegans (Wied, 1838): 9937
+  Hydrocotyle ranunculoides L.fil.: 7644
+  Baccharis halimifolia L.: 6125
+  Trachemys scripta scripta (Schoepff, 1792): 6059
+  Gambusia affinis (Baird & Girard, 1853): 5117
+  Arthurdendyus triangulatus (Dendy, 1895): 4711
+  Myriophyllum aquaticum (Vell.) Verdc.: 4520
+  Gambusia holbrooki Girard, 1859: 4038
+  Faxonius limosus (Rafinesque, 1817): 3957
+  Heracleum persicum Desf. ex Fisch., C.A.Mey. & Avé-Lall.: 3719
+  Nyctereutes procyonoides (Gray, 1834): 3302
+  Eutamias sibiricus (Laxmann, 1769): 2827
+  Asclepias syriaca L.: 2771
+  Acacia saligna (Labill.) H.L.Wendl.: 2256
+  Polygonum polystachyum Wall. ex Meisn.: 1655
+  Trachemys scripta troostii (Holbrook, 1836): 1496
+  Cenchrus setaceus (Forssk.) Morrone: 1343
+  Ludwigia peploides (Kunth) P.H.Raven: 1223
+  Ludwigia peploides subsp. montevidensis (Spreng.) P.H.Raven: 1186
+  Lagarosiphon major (Ridl.) Moss ex V.A.Wager: 1087
+  Persicaria wallichii Greuter & Burdet: 861
+  Pennisetum setaceum (Forssk.) Chiov.: 850
+  Heracleum persicum Desf.: 699
+  Lagarosiphon major (Ridl.) Moss: 695
+  Callosciurus erythraeus (Pallas, 1779): 635
+  Heracleum sosnowskyi Manden.: 546
+  Cardiospermum grandiflorum Sw.: 501
+  Myriophyllum heterophyllum Michx.: 480
+  Pistia stratiotes L.: 455
+  Rugulopteryx okamurae (E.Y.Dawson) I.K.Hwang, W.J.Lee & H.S.Kim, 2009: 421
+  Pycnonotus cafer (Linnaeus, 1766): 415
+  Pontederia crassipes Mart.: 346
+  Pueraria lobata (Willd.) Ohwi: 326
+  Koenigia polystachya (Wall. ex Meisn.) T.M.Schust. & Reveal: 297
+  Celastrus orbiculatus Thunb.: 257
+  Faxonius rusticus (Girard, 1852): 256
+  Eichhornia crassipes (Mart.) Solms: 226
+  Gambusia holbrocki Girard, 1859: 217
+  Acridotheres tristis (Linnaeus, 1766): 188
+  Procambarus virginalis Lyko, 2017: 178
+  Tamias sibiricus (Laxmann, 1769): 131
+  Cabomba caroliniana A.Gray: 102
+  Hakea sericea Schrad. & J.C.Wendl.: 96
+  Salvinia × molesta D.S.Mitch.: 77
+  Humulus scandens (Lour.) Merr.: 76
+  Axis axis (Erxleben, 1777): 73
+  Xenopus laevis (Daudin, 1802): 68
+  Humulus japonicus Siebold & Zucc.: 66
+  Pueraria montana var. lobata (Willd.) Maesen & S.M.Almeida ex Sanjappa & Predeep: 63
+  Corvus splendens Vieillot, 1817: 48
+  Rubrivena polystachya (Wall. ex Meisn.) M.Král: 36
+  Callosciurus finlaysonii (Horsfield, 1823): 35
+  Alternanthera philoxeroides (Mart.) Griseb.: 31
+  Sciurus niger Linnaeus, 1758: 30
+  Faxonius virilis (Hagen, 1870): 21
+  Procambarus fallax f. virginalis Martin, Dorn, Kawai, van der Heiden & Scholtz, 2010: 19
+  Emys elegans Wied, 1839: 15
+  Perccottus glenii Dybowski, 1877: 14
+  Persicaria polystachya (Wall. ex Meisn.) H.Gross: 14
+  Acacia cyanophylla Lindl.: 13
+  Ictalurus melas (Rafinesque, 1820): 12
+  Ehrharta calycina Sm.: 12
+  Urva auropunctata (Hodgson, 1836): 11
+  Solenopsis invicta Buren, 1972: 10
+  Impatiens glandulifera f. albida (Hegi) B.Boivin: 9
+  Myriophyllum brasiliense Cambess.: 7
+  Persicaria perfoliata (L.) H.Gross: 7
+  Gymnocoronis spilanthoides DC.: 6
+  Nasua nasua (Linnaeus, 1766): 6
+  Wasmannia auropunctata (Roger, 1863): 6
+  Fundulus heteroclitus (Linnaeus, 1766): 5
+  Aconogonon polystachyum (Wall. ex Meisn.) M.Král: 5
+  Parthenium hysterophorus L.: 4
+  Impatiens roylei Walp.: 4
+  Nyctereutes procyonoides ussuriensis Matschie, 1907: 4
+  Lampropeltis getula (Linnaeus, 1766): 4
+  Ludwigia grandiflora (Michx.) Zardini, H.Y.Gu & P.H.Raven: 3
+  Prosopis juliflora (Sw.) DC.: 3
+  Orconectes virilis (Hagen, 1870): 3
+  Mus coypus Molina, 1782: 3
+  Ailanthus altissima var. altissima: 3
+  Herpestes auropunctatus (Hodgson, 1836): 3
+  Herpestes javanicus (É.Geoffroy Saint-Hilaire, 1818): 3
+  Polygonum perfoliatum (L.) L.: 3
+  Ailanthus glandulosa Desf.: 2
+  Microstegium vimineum (Trin.) A.Camus: 2
+  Rana catesbeiana Shaw, 1802: 2
+  Myocastor coypus coypus (Molina, 1782): 2
+  Sapium sebiferum (L.) Roxb.: 2
+  Ludwigia peploides subsp. peploides: 2
+  Lygodium japonicum (Thunb.) Sw.: 1
+  Ludwigia uruguayensis (Cambess.) H.Hara: 1
+  Lespedeza cuneata (Dum.Cours.) G.Don: 1
+  Hakea sericea Hort.Ups. ex Regel: 1
+  Heracleum montegazzianum Sommier & Levier: 1
+  Jussiaea grandiflora Michx.: 1
+  Neltuma juliflora (Sw.) Raf.: 1
+  Fundulus heteroclitus macrolepidotus (Walbaum, 1792): 1
+  Pseudorasbora parva parvula Nichols, 1929: 1
+  Ailanthus altissima var. sutchuenensis (Dode) Rehder & E.H.Wilson: 1
+  Salvinia adnata Desv.: 1
+  Fundulus heteroclitus heteroclitus (Linnaeus, 1766): 1
+  Plotosus lineatus (Thunberg, 1787): 1
+  Pseudemys scripta (Thunberg, 1792): 1
