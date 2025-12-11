@@ -18,6 +18,8 @@ venv/
 data/**
 !data/README.md
 
+#Data logs are not nessessary to be tracked
+logs/**
 
 
 
