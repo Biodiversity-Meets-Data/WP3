@@ -1,0 +1,105 @@
+taxonKey,scientificName,n_occurrences_natura,n_sites,n_ms,year_min,year_max,n_years,temporal_span,temporal_completeness
+2225776,"Eriocheir sinensis H.Milne Edwards, 1853",13724,177,8,1936,2025,50,89,0.5555555555555556
+2226990,"Pacifastacus leniusculus (Dana, 1852)",17562,602,17,1905,2025,41,120,0.33884297520661155
+2227000,"Orconectes limosus (Rafinesque, 1817)",14038,335,5,1985,2025,41,40,1.0
+2227300,"Procambarus clarkii (Girard, 1852)",10105,637,9,1985,2025,36,40,0.8780487804878049
+2340977,"Ameiurus melas (Rafinesque, 1820)",12599,301,13,1981,2025,44,44,0.9777777777777777
+2350570,"Gambusia holbrooki Girard, 1859",3916,312,10,1990,2025,34,35,0.9444444444444444
+2350573,"Gambusia holbrocki Girard, 1859",96,32,1,1956,2022,24,66,0.3582089552238806
+2350580,"Gambusia affinis (Baird & Girard, 1853)",3401,74,2,1980,2020,33,40,0.8048780487804879
+2362868,"Pseudorasbora parva (Temminck & Schlegel, 1846)",49488,390,17,1990,2025,35,35,0.9722222222222222
+2390064,"Perccottus glenii Dybowski, 1877",13,9,4,2014,2025,5,11,0.4166666666666667
+2394486,"Lepomis gibbosus (Linnaeus, 1758)",68150,809,19,1975,2025,49,50,0.9607843137254902
+2427091,"Lithobates catesbeianus (Shaw, 1802)",9802,54,7,1996,2025,29,29,0.9666666666666667
+2427092,"Rana catesbeiana Shaw, 1802",2,2,1,2024,2024,1,0,1.0
+2433536,"Nasua nasua (Linnaeus, 1766)",4,4,2,2019,2024,3,5,0.5
+2434271,"Herpestes javanicus (É.Geoffroy Saint-Hilaire, 1818)",4,2,1,2014,2023,2,9,0.2
+2434282,"Herpestes auropunctatus (Hodgson, 1836)",6,3,1,2010,2011,2,1,1.0
+2434552,"Nyctereutes procyonoides (Gray, 1834)",799,313,15,1981,2025,26,44,0.5777777777777777
+2437394,"Callosciurus erythraeus (Pallas, 1779)",248,6,3,2006,2025,15,19,0.75
+2437399,"Callosciurus finlaysonii (Horsfield, 1823)",11,6,1,2015,2025,6,10,0.5454545454545454
+2437450,"Tamias sibiricus (Laxmann, 1769)",6,5,3,2003,2025,4,22,0.17391304347826086
+2440934,"Axis axis (Erxleben, 1777)",119,5,2,2021,2023,3,2,1.0
+2440946,"Muntiacus reevesi (Ogilby, 1839)",129,26,1,2014,2025,12,11,1.0
+2443002,"Trachemys scripta (Thunberg In Schoepff, 1792)",6380,765,23,1973,2025,35,52,0.660377358490566
+2480764,"Threskiornis aethiopicus (Latham, 1790)",6925,415,13,1989,2025,36,36,0.972972972972973
+2482499,"Corvus splendens Vieillot, 1817",5,4,2,2019,2020,2,1,1.0
+2486131,"Pycnonotus cafer (Linnaeus, 1766)",14,6,2,2012,2023,4,11,0.3333333333333333
+2489005,"Acridotheres tristis (Linnaeus, 1766)",26,7,5,1998,2025,9,27,0.32142857142857145
+2498252,"Alopochen aegyptiaca (Linnaeus, 1766)",204217,2077,19,1969,2025,49,56,0.8596491228070176
+2498305,"Oxyura jamaicensis (J.F.Gmelin, 1789)",4597,213,12,1979,2025,45,46,0.9574468085106383
+2502792,"Arthurdendyus triangulatus (Dendy, 1895)",3,3,1,2014,2017,2,3,0.5
+2702865,Ehrharta calycina Sm.,7,5,2,2002,2024,4,22,0.17391304347826086
+2706134,Pennisetum setaceum (Forssk.) Chiov.,174,61,4,2008,2025,17,17,0.9444444444444444
+2765940,Eichhornia crassipes (Mart.) Solms,58,26,6,2000,2025,16,25,0.6153846153846154
+2765942,Pontederia crassipes Mart.,256,26,5,2005,2025,16,20,0.7619047619047619
+2865565,Lagarosiphon major (Ridl.) Moss,92,34,6,1997,2025,21,28,0.7241379310344828
+2869311,Lysichiton americanus Hultén & H.St.John,1039,88,10,1989,2025,24,36,0.6486486486486487
+2870583,Pistia stratiotes L.,133,45,9,2005,2025,18,20,0.8571428571428571
+2882443,Cabomba caroliniana A.Gray,13,5,2,2005,2024,5,19,0.25
+2891770,Impatiens glandulifera Royle,41295,2906,24,1930,2025,66,95,0.6875
+2891771,Impatiens roylei Walp.,1,1,1,1956,1956,1,0,1.0
+2970805,Neltuma juliflora (Sw.) Raf.,1,1,1,2022,2022,1,0,1.0
+2977647,Pueraria montana var. lobata (Willd.) Maesen & S.M.Almeida ex Sanjappa & Predeep,1,1,1,2019,2019,1,0,1.0
+2977654,Pueraria lobata (Willd.) Ohwi,5,3,2,2002,2021,3,19,0.15
+2978552,Acacia saligna (Labill.) H.L.Wendl.,663,183,7,1984,2025,26,41,0.6190476190476191
+2980328,Acacia cyanophylla Lindl.,4,3,1,1998,2020,3,22,0.13043478260869565
+2984306,Gunnera tinctoria (Molina) Mirb.,1018,96,5,1988,2025,21,37,0.5526315789473685
+2984536,Humulus japonicus Siebold & Zucc.,28,4,1,2004,2016,6,12,0.46153846153846156
+2984537,Humulus scandens (Lour.) Merr.,15,14,3,2013,2025,9,12,0.6923076923076923
+3034825,Heracleum mantegazzianum Sommier & Levier,7389,960,18,1977,2025,48,48,0.9795918367346939
+3129663,Baccharis halimifolia L.,5096,176,5,1983,2025,33,42,0.7674418604651163
+3169169,Celastrus orbiculatus Thunb.,38,5,4,2015,2025,6,10,0.5454545454545454
+3170247,Asclepias syriaca L.,748,220,15,1862,2025,27,163,0.16463414634146342
+3189935,Cardiospermum grandiflorum Sw.,55,19,3,2010,2025,13,15,0.8125
+3190653,Ailanthus altissima (Mill.) Swingle,7503,1252,21,1871,2025,48,154,0.3096774193548387
+3190654,Ailanthus glandulosa Desf.,2,2,1,2006,2006,1,0,1.0
+3628745,Heracleum persicum Desf.,8,8,4,2010,2025,6,15,0.375
+3642949,Heracleum sosnowskyi Manden.,153,42,4,1985,2025,15,40,0.36585365853658536
+4033547,Persicaria polystachya (Wall. ex Meisn.) H.Gross,1,1,1,2017,2017,1,0,1.0
+4033648,Persicaria perfoliata (L.) H.Gross,1,1,1,2015,2015,1,0,1.0
+4037343,Rubrivena polystachya (Wall. ex Meisn.) M.Král,7,6,3,1975,2017,5,42,0.11627906976744186
+4264680,"Myocastor coypus (Molina, 1782)",33819,1561,18,1936,2025,50,89,0.5555555555555556
+5217334,"Xenopus laevis (Daudin, 1802)",8,3,2,2013,2024,2,11,0.16666666666666666
+5218786,"Procyon lotor (Linnaeus, 1758)",5791,771,10,1979,2025,28,46,0.5957446808510638
+5219681,"Sciurus carolinensis Gmelin, 1788",166,44,4,2003,2025,18,22,0.782608695652174
+5219683,"Sciurus niger Linnaeus, 1758",7,4,2,2010,2022,4,12,0.3076923076923077
+5219858,"Ondatra zibethicus (Linnaeus, 1766)",112278,1082,21,1964,2025,56,61,0.9032258064516129
+5274863,Salvinia × molesta D.S.Mitch.,5,5,3,2012,2023,2,11,0.16666666666666666
+5329212,Elodea nuttallii (Planch.) H.St.John,3917,523,19,1966,2025,58,59,0.9666666666666667
+5358460,Prosopis juliflora (Sw.) DC.,2,1,1,2019,2022,2,3,0.5
+5361762,Myriophyllum heterophyllum Michx.,254,21,7,1995,2025,22,30,0.7096774193548387
+5361785,Myriophyllum aquaticum (Vell.) Verdc.,1490,143,11,1995,2025,28,30,0.9032258064516129
+5420991,Ludwigia peploides (Kunth) P.H.Raven,1441,119,7,1996,2025,24,29,0.8
+5421039,Ludwigia grandiflora (Michx.) Greuter & Burdet,8603,207,6,1985,2025,31,40,0.7560975609756098
+5545159,Ludwigia peploides subsp. montevidensis (Spreng.) P.H.Raven,731,58,4,1919,2025,34,106,0.3177570093457944
+5712056,"Fundulus heteroclitus (Linnaeus, 1766)",4,1,1,2025,2025,1,0,1.0
+5723120,"Fundulus heteroclitus macrolepidotus (Walbaum, 1792)",2,2,1,2025,2025,1,0,1.0
+5824863,"Rugulopteryx okamurae (E.Y.Dawson) I.K.Hwang, W.J.Lee & H.S.Kim, 2009",474,42,4,2016,2025,9,9,0.9
+5828232,Cenchrus setaceus (Forssk.) Morrone,256,84,6,2005,2025,16,20,0.7619047619047619
+6063677,Gymnocoronis spilanthoides DC.,5,4,2,2015,2024,4,9,0.4
+6157026,"Trachemys scripta elegans (Wied, 1838)",4712,544,19,1978,2025,37,47,0.7708333333333334
+6157035,"Trachemys scripta troostii (Holbrook, 1836)",686,104,8,2003,2025,19,22,0.8260869565217391
+6167502,"Pseudorasbora parva parvula Nichols, 1929",1,1,1,2016,2016,1,0,1.0
+6247411,"Vespa velutina nigrithorax Buysson, 1905",1935,495,8,2006,2025,19,19,0.95
+6391908,Persicaria wallichii Greuter & Burdet,110,27,3,2008,2025,16,17,0.8888888888888888
+6712479,Ailanthus altissima var. sutchuenensis (Dode) Rehder & E.H.Wilson,2,2,1,2022,2022,1,0,1.0
+7062200,"Trachemys scripta scripta (Schoepff, 1792)",2378,383,15,1991,2025,26,34,0.7428571428571429
+7193434,"Fundulus heteroclitus heteroclitus (Linnaeus, 1766)",2,2,1,2017,2017,1,0,1.0
+7223856,Ludwigia peploides subsp. peploides,2,1,1,2022,2023,2,1,1.0
+7287606,Hakea sericea Schrad. & J.C.Wendl.,14,12,3,2013,2023,5,10,0.45454545454545453
+7965247,"Plotosus lineatus (Thunberg, 1787)",1,1,1,2024,2024,1,0,1.0
+7978544,Hydrocotyle ranunculoides L.fil.,1660,73,7,1998,2025,27,27,0.9642857142857143
+8070043,"Ludwigia grandiflora (Michx.) Zardini, H.Y.Gu & P.H.Raven",2,2,1,1995,1995,1,0,1.0
+8343116,Aconogonon polystachyum (Wall. ex Meisn.) M.Král,2,1,1,2021,2021,1,0,1.0
+8609297,Ludwigia uruguayensis (Cambess.) H.Hara,2,2,1,1986,1986,1,0,1.0
+8848208,Koenigia polystachya (Wall. ex Meisn.) T.M.Schust. & Reveal,32,14,7,1994,2025,15,31,0.46875
+8879526,"Procambarus fallax f. virginalis Martin, Dorn, Kawai, van der Heiden & Scholtz, 2010",2,2,1,2020,2020,1,0,1.0
+8909595,"Faxonius limosus (Rafinesque, 1817)",1892,464,16,1905,2025,42,120,0.34710743801652894
+8979506,"Faxonius rusticus (Girard, 1852)",104,6,1,2022,2022,1,0,1.0
+9442269,"Procambarus virginalis Lyko, 2017",17,10,6,2019,2025,5,6,0.7142857142857143
+9799308,"Lampropeltis getula (Linnaeus, 1766)",2,2,1,2014,2014,1,0,1.0
+10504616,"Urva auropunctata (Hodgson, 1836)",9,4,1,2016,2025,4,9,0.4
+10602587,"Eutamias sibiricus (Laxmann, 1769)",2330,11,2,1976,2025,33,49,0.66
+11342546,Lagarosiphon major (Ridl.) Moss ex V.A.Wager,529,4,1,1992,2024,24,32,0.7272727272727273
+12058060,"Ictalurus melas (Rafinesque, 1820)",1,1,1,2022,2022,1,0,1.0
