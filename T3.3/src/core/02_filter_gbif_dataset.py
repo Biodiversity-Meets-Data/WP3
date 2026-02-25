@@ -14,6 +14,9 @@ Description:
 This script processes raw GBIF occurrence data (provided as a zipped Darwin Core archive).
 It reads occurrence records in memory-efficient chunks, applies data quality filters,
 and produces a filtered dataset along with a statistical summary report.
+The gbifID field is preserved throughout the filtering process and
+serves as the stable unique occurrence identifier (logical primary key)
+for all downstream spatial and analytical modules.
 
 Input:
 - Occurrence from Raw downloaded GBIF data zip file
@@ -80,11 +83,21 @@ RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 # is expected to be the raw Darwin Core Archive produced by the download
 # script (01_download_gbif.py) and stored under data/raw.
 
-DATASET_NAME = "IAS"   # BIRDS or HABITATS or IAS
+DATASET_NAME = "HABITATS"   # BIRDS or HABITATS or IAS
 
 ZIP_FILE = RAW_DIR / f"GBIF_{DATASET_NAME}_251106.zip"
-REPORT_FILE = RESULTS_DIR / f"GBIF_{DATASET_NAME}_summary_report.txt"
-FILTERED_FILE = FILTERED_DIR / f"GBIF_{DATASET_NAME}_filtered_occurrences.csv"
+
+# Put report inside dataset-specific subfolder
+RESULTS_SUBDIR = RESULTS_DIR / DATASET_NAME
+RESULTS_SUBDIR.mkdir(parents=True, exist_ok=True)
+
+REPORT_FILE = RESULTS_SUBDIR / f"GBIF_{DATASET_NAME}_summary_report.txt"
+
+# Create dataset-specific filtered directory
+FILTERED_SUBDIR = FILTERED_DIR / DATASET_NAME
+FILTERED_SUBDIR.mkdir(parents=True, exist_ok=True)
+
+FILTERED_FILE = FILTERED_SUBDIR / f"GBIF_{DATASET_NAME}_filtered_occurrences.csv"
 
 CHUNK_SIZE = 100_000  # rows per chunk
 
@@ -98,6 +111,7 @@ CHUNK_SIZE = 100_000  # rows per chunk
 # assessment or species distribution modelling.
 
 COLUMNS_KEEP = [
+    "gbifID",
     "taxonKey",
     "scientificName",
     "decimalLatitude",
@@ -180,7 +194,7 @@ with zipfile.ZipFile(str(ZIP_FILE), "r") as z:
 
             # 1. Drop rows missing critical fields (these must always exist)
             chunk = chunk.dropna(
-                subset=["scientificName", "taxonKey", "decimalLatitude", "decimalLongitude"]
+                subset=["gbifID","scientificName", "taxonKey", "decimalLatitude", "decimalLongitude"]
             )
             
             # 2. Convert fields to numeric where needed
@@ -255,9 +269,18 @@ with zipfile.ZipFile(str(ZIP_FILE), "r") as z:
 
 if filtered_data:
     filtered_df = pd.concat(filtered_data, ignore_index=True)
-    filtered_df.to_csv(FILTERED_FILE, index=False)
+
+    # Define ZIP output path
+    FILTERED_ZIP = FILTERED_SUBDIR / f"GBIF_{DATASET_NAME}_filtered_occurrences.zip"
+    INNER_CSV_NAME = f"GBIF_{DATASET_NAME}_filtered_occurrences.csv"
+
+    # Write CSV into ZIP archive
+    with zipfile.ZipFile(FILTERED_ZIP, "w", compression=zipfile.ZIP_DEFLATED) as z:
+        z.writestr(INNER_CSV_NAME, filtered_df.to_csv(index=False))
+
 else:
     print("No data after filtering.")
+    filtered_df = pd.DataFrame(columns=COLUMNS_KEEP)
     
 
 

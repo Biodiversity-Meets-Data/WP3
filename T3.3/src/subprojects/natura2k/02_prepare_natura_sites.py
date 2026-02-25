@@ -13,7 +13,7 @@ analysis-ready layer with the key site attributes.
 
 Input:
 - Natura 2000 GeoPackage (e.g. Natura2000_end2022.gpkg) located in:
-  data/external/natura2000/
+  data/external/natura2k/
 
 Output:
 - Cleaned Natura 2000 sites layer in WGS84:

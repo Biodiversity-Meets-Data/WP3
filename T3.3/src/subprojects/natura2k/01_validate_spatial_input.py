@@ -8,7 +8,8 @@ Task: T3.3 - Data gap and bias surfaces
 
 Description:
 Validates a filtered GBIF occurrence dataset before spatial processing.
-Checks required fields, missing coordinates, and coordinate ranges.
+Checks structural integrity (including gbifID presence and uniqueness),
+required fields, missing coordinates, and coordinate ranges.
 Generates a validation log file for reproducibility.
 
 Input:
@@ -19,8 +20,13 @@ Output:
 - Console summary of validation results
 
 Notes:
-This step does not modify the dataset. It only validates structure and
-coordinate integrity. All dataset types (Birds, Habitats, IAS) are supported.
+This step does not modify the dataset. It validates:
+- Structural integrity (gbifID presence, completeness, uniqueness)
+- Coordinate completeness
+- Coordinate value ranges
+
+All dataset types (Birds, Habitats, IAS) are supported.
+
 # This validation is specific to spatial analyses (Natura pipeline).
 # It does not cover temporal or other analytical dimensions.
 '''
@@ -57,7 +63,7 @@ LOG_DIR.mkdir(parents=True, exist_ok=True)
 # Only the file naming pattern should change when switching between
 # IAS / BIRDS / HABITATS.
 
-DATASET_NAME = "HABITATS"  # "IAS", "BIRDS", "HABITATS"
+DATASET_NAME = "IAS"  # "IAS", "BIRDS", "HABITATS"
 ZIP_FILENAME = f"GBIF_{DATASET_NAME}_filtered_occurrences.zip"  # όνομα αρχείου μέσα στο data/filtered
 ZIP_PATH = FILTERED_DIR / DATASET_NAME /  ZIP_FILENAME
 
@@ -65,10 +71,11 @@ ZIP_PATH = FILTERED_DIR / DATASET_NAME /  ZIP_FILENAME
 INNER_CSV = ZIP_FILENAME.replace(".zip", ".csv")
 
 # Column names in this dataset (as they exist in the CSV)
-COL_SCI_NAME   = "scientificName"      # change if different
-COL_SPECIES_KEY = "taxonKey"        # or "taxonKey" etc.
-COL_LONGITUDE  = "decimalLongitude"   # or "longitude"
-COL_LATITUDE   = "decimalLatitude"    # or "latitude"
+COL_GBIF_ID = "gbifID"
+COL_SCI_NAME   = "scientificName"      
+COL_SPECIES_KEY = "taxonKey"        
+COL_LONGITUDE  = "decimalLongitude"   
+COL_LATITUDE   = "decimalLatitude"    
 
 # ----------------------------------------------------------------------
 # Logging configuration
@@ -125,11 +132,32 @@ print("Shape:", df.shape)
 
 log("=== Dataset validation started ===")
 log(f"Dataset shape: {df.shape}")
+log(f"gbifID column:          {COL_GBIF_ID}")
 log(f"Scientific name column: {COL_SCI_NAME}")
 log(f"Species key column:     {COL_SPECIES_KEY}")
 log(f"Longitude column:       {COL_LONGITUDE}")
 log(f"Latitude column:        {COL_LATITUDE}")
 
+# ----------------------------------------------------------------------
+# gbifID structural validation
+# ----------------------------------------------------------------------
+log("\n[gbifID validation]")
+
+if COL_GBIF_ID not in df.columns:
+    log("ERROR: gbifID column not found in dataset.")
+else:
+    log("gbifID column detected.")
+
+    missing_gbif = df[COL_GBIF_ID].isna().sum()
+    log(f"Missing gbifID values: {missing_gbif}")
+
+    duplicate_ids = df[COL_GBIF_ID].duplicated().sum()
+    log(f"Duplicate gbifID values: {duplicate_ids}")
+
+    if missing_gbif == 0 and duplicate_ids == 0:
+        log("gbifID checks passed (present, complete, unique).")
+    else:
+        log("WARNING: gbifID issues detected (missing and/or duplicates).")
 
 # ----------------------------------------------------------------------
 # Missing coordinate values
