@@ -47,18 +47,18 @@ Outputs:
 
 1) Baseline enriched dataset:
    data/processed/<DATASET_NAME>/
-       GBIF_<DATASET_NAME>_with_natura_sites.gpkg
+       GBIF_<DATASET_NAME>_natura_spatial_baseline.gpkg
 
 2) Uncertainty-enriched dataset (baseline + uncertainty fields):
    data/processed/<DATASET_NAME>/
-       GBIF_<DATASET_NAME>_with_natura_sites_uncertainty.gpkg
+       GBIF_<DATASET_NAME>_natura_spatial_uncertainty.gpkg
 
 3) Uncertainty summary table:
-   results/natura2k/<DATASET_NAME>/
+   results/natura_analysis/<DATASET_NAME>/
        GBIF_<DATASET_NAME>_uncertainty_summary.csv
 
 4) Uncertainty mapping table (record-level diagnostics):
-   results/natura2k/<DATASET_NAME>/
+   results/natura_analysis/<DATASET_NAME>/
        GBIF_<DATASET_NAME>_uncertainty_mapping.csv
 
 Notes:
@@ -93,9 +93,9 @@ EXTERNAL_DIR = DATA_DIR / "external"
 NATURA_DIR = EXTERNAL_DIR / "natura2k"
 
 # Dataset to use: "BIRDS", "HABITATS" or "IAS"
-DATASET_NAME = "HABITATS"  # Change as needed
+DATASET_NAME = "IAS"  # Change as needed
 
-PROCESSED_DIR = DATA_DIR / "processed" / DATASET_NAME
+PROCESSED_DIR = DATA_DIR / "processed" / DATASET_NAME / "natura_analysis"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 # Helper: relative paths for logging
@@ -130,15 +130,17 @@ NATURA_LAYER = "natura_sites_epsg4326"  # layer name used in 02_prepare_natura_s
 # Output: enriched GBIF occurrences with Natura attributes
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 # Output 1: baseline (same as original 03)
-OUTPUT_GPKG_BASELINE = PROCESSED_DIR / f"GBIF_{DATASET_NAME}_with_natura_sites.gpkg"
+OUTPUT_GPKG_BASELINE = PROCESSED_DIR / f"GBIF_{DATASET_NAME}_natura_spatial_baseline.gpkg"
 # Output 2: uncertainty-aware
-OUTPUT_GPKG_UNCERT = PROCESSED_DIR / f"GBIF_{DATASET_NAME}_with_natura_sites_uncertainty.gpkg"
+OUTPUT_GPKG_UNCERT = PROCESSED_DIR / f"GBIF_{DATASET_NAME}_natura_spatial_uncertainty.gpkg"
 
+RUN_BASELINE = True
+RUN_UNCERTAINTY = True #For habitats set to False and run the 03b_spatial_join_gbif_natura_uncertainty.py separately, to avoid RAM issues with the large dataset.
 
 # ----------------------------------------------------------------------
 # Logging setup
 # ----------------------------------------------------------------------
-LOG_DIR = PROJECT_ROOT / "logs" / "natura2k" / "03_spatial_join_gbif_natura"
+LOG_DIR = PROJECT_ROOT / "logs" / "natura_analysis" / "03_spatial_join_gbif_natura"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M")
@@ -317,6 +319,11 @@ del gdf_joined
 gc.collect()
 log("[03] Dropped full gdf_joined from memory (keeping slim only).")
 
+if not RUN_UNCERTAINTY:
+    log("[03] RUN_UNCERTAINTY=False -> stopping after baseline output.")
+    log("=== Spatial join GBIF ↔ Natura completed (baseline only) ===")
+    raise SystemExit(0)
+
 # ----------------------------------------------------------------------
 # Uncertainty-aware classification (RAM-safe using slim GeoDataFrame)
 # ----------------------------------------------------------------------
@@ -367,6 +374,7 @@ if len(inside_idx) > 0:
 
         dist_inside = slim_chunk_m.geometry.distance(matched_poly.boundary)
         gdf_slim.loc[idx_chunk, "dist_to_boundary_m"] = dist_inside.values
+        
 
         if k % 5 == 0:
             log(f"  - INSIDE chunks processed: {k} (last chunk size={len(idx_chunk)})")
@@ -428,7 +436,7 @@ for _v in ["gdf_slim_m", "gdf_natura_m", "outside_nearest", "outside_points_m", 
 gc.collect()
 
 # 7) Summary CSV in results/ (for presentation)
-RESULTS_DIR = PROJECT_ROOT / "results" / "natura2k" / DATASET_NAME
+RESULTS_DIR = PROJECT_ROOT / "results" / "natura_analysis" / DATASET_NAME
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 SUMMARY_CSV = RESULTS_DIR / f"GBIF_{DATASET_NAME}_uncertainty_summary.csv"

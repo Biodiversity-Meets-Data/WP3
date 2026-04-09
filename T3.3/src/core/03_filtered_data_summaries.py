@@ -43,7 +43,7 @@ RESULTS_DIR = PROJECT_ROOT / "results" / "filtering"
 # ----------------------------------------------------------------------
 # User configuration
 # ----------------------------------------------------------------------
-DATASET_NAME = "HABITATS"  # BIRDS / HABITATS / IAS
+DATASET_NAME = "IAS"  # BIRDS / HABITATS / IAS
 
 FILTERED_SUBDIR = FILTERED_DIR / DATASET_NAME
 FILTERED_ZIP = FILTERED_SUBDIR / f"GBIF_{DATASET_NAME}_filtered_occurrences.zip"

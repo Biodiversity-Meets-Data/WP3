@@ -1,5 +1,5 @@
 """
-Script: 02_prepare_natura_sites.py
+Script: natura_analysis/02_prepare_natura_sites.py
 Author: Ioannis Kavakiotis
 Institution: International Hellenic University
 Project: Biodiversity Meets Data (BMD)
@@ -7,21 +7,38 @@ Work Package: WP3 - Data harmonisation in Space-Time-Taxonomy, Data gaps and bia
 Task: T3.3 - Data gap and bias surfaces
 
 Description:
-Loads the official Natura 2000 GeoPackage, inspects its structure,
-reprojects the geometries to WGS84 (EPSG:4326) and saves a cleaned,
-analysis-ready layer with the key site attributes.
+Prepares the Natura 2000 site geometries for use in the spatial
+analysis workflow. The script loads the official Natura 2000
+GeoPackage, inspects its structure, harmonises its coordinate
+reference system, and produces a cleaned, analysis-ready layer.
+
+This step does not perform any spatial analysis or filtering.
+Its purpose is to ensure that the Natura site geometries are
+consistent, interpretable, and directly compatible with GBIF
+occurrence data for downstream spatial operations.
 
 Input:
 - Natura 2000 GeoPackage (e.g. Natura2000_end2022.gpkg) located in:
   data/external/natura2k/
 
 Output:
-- Cleaned Natura 2000 sites layer in WGS84:
-  data/external/natura2000/Natura2000_sites_prepared.gpkg
+- Prepared Natura 2000 sites layer in WGS84 (EPSG:4326):
+  data/external/natura2k/Natura2000_sites_prepared.gpkg
+
+Process:
+- Load Natura 2000 polygon layer
+- Inspect geometry count, CRS, and attribute schema
+- Reproject geometries to WGS84 (EPSG:4326) if required
+- Select key site attributes when available
+- Preserve full schema if expected fields are missing
+- Save cleaned and harmonised layer to GeoPackage
 
 Notes:
-This script prepares site geometries for spatial joins with GBIF
-occurrence data, which are stored in WGS84 (EPSG:4326).
+- The original Natura dataset remains unchanged.
+- This script ensures compatibility with GBIF occurrence data,
+  which are processed in WGS84 during the core pipeline.
+- The output layer is used in downstream spatial joins
+  (03_spatial_join_gbif_natura.py).
 """
 
 from pathlib import Path
@@ -64,7 +81,7 @@ def rel(path: Path) -> str:
 # ----------------------------------------------------------------------
 # Logging setup
 # ----------------------------------------------------------------------
-LOG_DIR = PROJECT_ROOT / "logs" / "natura2k" / "02_prepare_natura_sites"
+LOG_DIR = PROJECT_ROOT / "logs" / "natura_analysis" / "02_prepare_natura_sites"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M")
@@ -96,7 +113,7 @@ if not NATURA_GPKG.exists():
     raise FileNotFoundError(f"Natura GeoPackage not found: {NATURA_GPKG}")
 
 log("\nLoading Natura 2000 GeoPackage...")
-gdf = gpd.read_file(NATURA_GPKG)
+gdf = gpd.read_file(NATURA_GPKG, layer="NaturaSite_polygon")
 
 log("Loaded Natura layer.")
 log(f"Number of sites: {len(gdf)}")
@@ -129,14 +146,15 @@ else:
 
 SITE_CODE_COL = "SITECODE"   # Adjust after first run if needed
 NAME_COL      = "SITENAME"
-COUNTRY_COL   = "COUNTRY"
+COUNTRY_COL   = "MS"
 TYPE_COL      = "SITETYPE"
+INSPIRE_COL   = "INSPIRE_ID"
 
 missing_cols = [
     col for col in [SITE_CODE_COL, NAME_COL, COUNTRY_COL, TYPE_COL]
     if col not in gdf.columns
 ]
-
+ 
 if missing_cols:
     log("\nWARNING: Some expected columns are missing:")
     for c in missing_cols:
@@ -144,7 +162,15 @@ if missing_cols:
     log("Keeping all columns for now. Update the constants above after inspection.")
     gdf_clean = gdf.copy()
 else:
-    keep_cols = [SITE_CODE_COL, NAME_COL, COUNTRY_COL, TYPE_COL, "geometry"]
+    keep_cols = [SITE_CODE_COL, NAME_COL, COUNTRY_COL, TYPE_COL]
+
+    if INSPIRE_COL in gdf.columns:
+        keep_cols.append(INSPIRE_COL)
+        log("INSPIRE_ID column detected and included.")
+    else:
+        log("INSPIRE_ID column not found (optional).")
+
+    keep_cols.append("geometry")
     gdf_clean = gdf[keep_cols].copy()
 
 log(f"\nCleaned GeoDataFrame shape: {gdf_clean.shape}")
@@ -154,10 +180,13 @@ log(f"\nCleaned GeoDataFrame shape: {gdf_clean.shape}")
 # ----------------------------------------------------------------------
 NATURA_DIR.mkdir(parents=True, exist_ok=True)
 
-log(f"\nSaving cleaned Natura sites to: {OUTPUT_GPKG}")
+layer_name = "natura_sites_epsg4326"
+
+log(f"\nSaving cleaned Natura sites to: {rel(OUTPUT_GPKG)}")
+log(f"Output layer name: {layer_name}")
 gdf_clean.to_file(
     OUTPUT_GPKG,
-    layer="natura_sites_epsg4326",
+    layer=layer_name,
     driver="GPKG"
 )
 
