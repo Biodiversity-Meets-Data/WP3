@@ -1,6 +1,10 @@
-Due to their size, the full analysis results are available via the following link: [drive link].
+Due to their size, the full analysis results are available via the following link: https://drive.google.com/drive/folders/1jwoqt9lfkz-M3NuvcmvXwVv3tLMY3MWm?usp=drive_link.
 
 The corresponding folders in this repository are now deprecated and will be removed soon.
+
+
+
+
 
 
 # Results Directory
