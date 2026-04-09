@@ -38,4 +38,4 @@ Contains intermediate derived datasets created during analysis, including:
 - Only metadata files (like this README and link lists) are tracked.
 - All datasets in this folder are generated or consumed by scripts in:
   - `src/core/`
-  - `src/subprojects/natura2k/`
+  - `src/subprojects/natura_analysis/`
